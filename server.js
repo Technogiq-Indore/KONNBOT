@@ -6,10 +6,12 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://0.0.0.0:27017/userlogin', { useNewUrlParser: true, useUnifiedTopology: true }).then((res)=>{
+mongoose.connect('mongodb+srv://priyanshu16kpl:Manu3850@cluster0.zkzabbv.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }).then((res)=>{
   console.log("connected");
-})
-// .catch((err)=>{console.log(err)});
+}).catch((err)=>{console.log(err)});
+// mongoose.connect('mongodb://0.0.0.0:27017/userlogin', { useNewUrlParser: true, useUnifiedTopology: true }).then((res)=>{
+//   console.log("connected");
+// }).catch((err)=>{console.log(err)});
 
 // Configure express-session
 
