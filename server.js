@@ -8,7 +8,8 @@ const app = express();
 // Connect to MongoDB
 mongoose.connect('mongodb://0.0.0.0:27017/userlogin', { useNewUrlParser: true, useUnifiedTopology: true }).then((res)=>{
   console.log("connected");
-}).catch((err)=>{console.log(err)});
+})
+// .catch((err)=>{console.log(err)});
 
 // Configure express-session
 
